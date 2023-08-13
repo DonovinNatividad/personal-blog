@@ -1,11 +1,24 @@
-.counter {
-	display: grid;
-	font-size: 2em;
-	grid-template-columns: repeat(3, minmax(0, 1fr));
-	margin-top: 2em;
-	place-items: center;
+/* styles.css */
+p {
+	font-size: 1.25rem/* 24px */;
+	line-height: 2rem/* 32px */;
+	max-width: 40rem/* 512px */;
+	--tw-text-opacity: 1;
+    color: #d4d4d4;
+}  
+
+strong {
+	color: #f5f5f5;
 }
 
-.counter-message {
-	text-align: center;
+.rainbow:hover {
+	text-shadow: -4px 4px #ef3550,
+               -8px 8px #f48fb1,
+               -12px 12px #7e57c2,
+               -16px 16px #2196f3,
+               -20px 20px #26c6da,
+               -24px 24px #43a047,
+               -28px 28px #eeff41,
+               -32px 32px #f9a825,
+               -36px 36px #ff5722;
 }

@@ -1,36 +1,28 @@
 ---
-// Component Imports
-import Counter from '../components/Counter';
-const someProps = {
-	count: 0,
-};
-
-// Full Astro Component Syntax:
-// https://docs.astro.build/core-concepts/astro-components/
+import MySiteLayout from '../layouts/MySiteLayout.astro';
 ---
+<MySiteLayout title="● home">
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<style>
-			html,
-			body {
-				font-family: system-ui;
-				margin: 0;
-			}
-			body {
-				padding: 2rem;
-			}
-		</style>
-	</head>
-	<body>
-		<main>
-			<Counter {...someProps} client:visible>
-				<h1>Hello, React!</h1>
-			</Counter>
-		</main>
-	</body>
-</html>
+    <h1 class="text-3xl font-bold mb-8 text-neutral-600 italic">donnie d</h1>
+	<p class="max-w-lg mb-10">I am a 20 year old <strong>cse</strong> major at <strong>osu</strong> and I like 
+	to make <strong>websites</strong> in my freetime and go to the <strong>gym</strong>.</p>
+
+	<p class="mb-10">I'm trying to learn <strong class="text-cyan-300">React</strong>, <strong class="text-sky-400">TailwindCSS</strong>,
+		 along with <strong class="text-lime-600">NodeJS</strong> to
+	build up my <strong class="rainbow">webdev</strong> skills</p>
+
+	<p class="mb-20">I am currently working on getting this website up to show <strong>blogs...</strong></p>
+
+	<p>under<pre>
+                     _                   _   _             
+                    | |                 | | (_)            
+  ___ ___  _ __  ___| |_ _ __ _   _  ___| |_ _  ___  _ __  
+ / __/ _ \| '_ \/ __| __| '__| | | |/ __| __| |/ _ \| '_ \ 
+| (_| (_) | | | \__ \ |_| |  | |_| | (__| |_| | (_) | | | |
+ \___\___/|_| |_|___/\__|_|   \__,_|\___|\__|_|\___/|_| |_|...
+</pre>
+</p>
+
+</MySiteLayout>
+
+

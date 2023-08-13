@@ -1,0 +1,18 @@
+---
+export function getStaticPaths() {
+  return [
+    {params: {dog: 'clifford'}},
+    {params: {dog: 'rover'}},
+    {params: {dog: 'spot'}},
+  ];
+}
+
+const { dog } = Astro.params;
+
+import MySiteLayout from '../../layouts/MySiteLayout.astro';
+---
+<MySiteLayout title="● home">
+
+    <p>good boy {dog}</p>
+
+</MySiteLayout>
