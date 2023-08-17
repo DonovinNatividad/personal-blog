@@ -7,6 +7,6 @@ import tailwind from "@astrojs/tailwind";
 export default defineConfig({
   // Enable React to support React JSX components.
   site: 'https://donovinnatividad.github.io',
-  base: '/personal-blog',
+  base: '/',
   integrations: [react(), tailwind()]
 });

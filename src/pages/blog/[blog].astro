@@ -1,0 +1,26 @@
+---
+
+export function getStaticPaths() {
+  return [
+    {params: {blog: 'bio'}},
+    {params: {blog: 'rover'}},
+    {params: {blog: 'spot'}},
+  ];
+}
+
+const { blog } = Astro.params;
+
+import MySiteLayout from '../../layouts/MySiteLayout.astro';
+---
+
+<MySiteLayout title={blog}>
+
+  <a href="/blog">
+    <h1 class="text-2xl mb-8 text-neutral-200 italic underline">← back</h1>
+  </a> 
+
+  <h1 class="text-3xl font-bold mb-8 text-neutral-200 italic">{blog}</h1>
+	<p>This is a sample article about me for <strong>testing purposes</strong> only
+  </p>
+
+</MySiteLayout>

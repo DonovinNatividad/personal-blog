@@ -5,9 +5,8 @@ const { title } = Astro.props
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
     <title>donnie d {title}</title>
 		<style>
 			html,
@@ -15,22 +14,18 @@ const { title } = Astro.props
 				font-family: system-ui;
 				margin: 0;
 			}
-			body {
-				padding: 2rem;
-			}
+
 		</style>
 		<style>
-			@import '../components/Counter.css';
+			@import '../styles.css';
 		</style>
 	</head>
-	<body class="bg-neutral-900 font-roboto">
-		<main class="flex justify-center">
-				<div class="flex items-start flex-col max-w-[43rem] text-gray-50 selection:bg-slate-700">
-          <article>
-            <slot /> <!-- your content is injected here -->
-          </article>
-				</div>
-				
-		</main>
+
+	<body class="bg-neutral-900 font-roboto flex max-w-fit justify-center">
+		<main class="w-screen flex justify-center">
+			<div class="flex items-start flex-col max-w-fit text-gray-50 selection:bg-slate-700 m-3">
+				<slot /> <!-- your content is injected here -->
+			</div>
+		</main>		
 	</body>
 </html>

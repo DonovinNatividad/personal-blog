@@ -11,6 +11,10 @@ strong {
 	color: #f5f5f5;
 }
 
+.rainbow {
+    transition: 0.3s ease;
+}
+
 .rainbow:hover {
 	text-shadow: -4px 4px #ef3550,
                -8px 8px #f48fb1,
@@ -21,4 +25,14 @@ strong {
                -28px 28px #eeff41,
                -32px 32px #f9a825,
                -36px 36px #ff5722;
+}
+
+body {
+    font-size: 16px; /* Default size for desktop */
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 14px; /* Adjust font size for mobile */
+    }
 }
